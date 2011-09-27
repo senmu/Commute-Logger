@@ -12,3 +12,7 @@ Issues with the current app
 - All the events (names) that get recorded are hardcoded in the app. I made it hardcoded to expedite the completion of something I could use the next day. It would be nice if you could configure what transfers and buses or trains you take during your trip.
 - While multitasking is supported (which is important), if a timer is started and you pop the view controller to go back to the first tab, everything gets lost. If you choose to use this app in its current state, **leave it alone while the timer is running**.
 - The second tab which is intended to display the data you've recorded is not yet implemented
+
+Credits
+-------
+- [Jeff Lamarche](http://iphonedevelopment.blogspot.com/2010/08/funny-thing-about-old-code.html) for the MCFileAppend Objective-C category on NSData for easy appending to external files

@@ -1,9 +1,8 @@
 //
 //  NSData+MCFileAppend.h
-//  VersatileTour
 //
-//  Created by Sam Lu on 11-09-18.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Jeff Lamarche on 10-08-18.
+//  Original source: http://iphonedevelopment.blogspot.com/2010/08/funny-thing-about-old-code.html
 //
 
 #import <Foundation/Foundation.h>
