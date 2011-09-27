@@ -8,6 +8,10 @@
 
 #import "SecondViewController.h"
 
+#define DATE_LABEL_TAG      1
+#define SESSION_LABEL_TAG   2
+#define EVENT_LABEL_TAG     3
+#define DURATION_LABEL_TAG  4
 
 @implementation SecondViewController
 
@@ -27,6 +31,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    myTableView.rowHeight = 100;
+    
     // Load tableview with data from csv
     [self loadData];
 }
@@ -70,12 +77,18 @@
         NSString *string = [NSString stringWithUTF8String:[dataLog bytes]];
         NSArray *dataArray = [string csvRows];
         logOfCommutes = [[NSMutableArray alloc] initWithArray:dataArray];
-        NSLog(@"dataArray: %@", dataArray);
-        NSLog(@"dataArray[0]: %@", [dataArray objectAtIndex:0]);
+        // pop the first entry in logOfCommutes array. These are unnecessary headers
+        [logOfCommutes removeObjectAtIndex:0];
+        
+        // reverse the items in logOfCommutes so that newest items will appear at the top of the table
+        dataArray = [[logOfCommutes reverseObjectEnumerator] allObjects];
+        [logOfCommutes release];
+        logOfCommutes = [[NSMutableArray alloc] initWithArray:dataArray];
 	}
 	else
 	{
         // Add a message in the tableview showing that there are no records yet
+        logOfCommutes = [[NSMutableArray alloc] initWithObjects:[[NSMutableArray alloc] initWithObjects:@"No records yet", @"", @"", @"", nil], nil];
     }
 }
 
@@ -100,16 +113,62 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCell"];
+	
+	if(!cell)
+	{
+		//Create the cell
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyCell"] autorelease];
+        
+		//Create the label
+		UILabel *dateLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, tableView.frame.size.width-20, 20)];
+		//Tag the label
+		dateLabel.tag = DATE_LABEL_TAG;
+		//Add the label to the cell
+		[cell.contentView addSubview:dateLabel];
+		[dateLabel release];
+        
+        //Create the label
+		UILabel *sessionLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, tableView.frame.size.width-20, 20)];
+		//Tag the label
+		sessionLabel.tag = SESSION_LABEL_TAG;
+		//Add the label to the cell
+		[cell.contentView addSubview:sessionLabel];
+		[sessionLabel release];
+        
+        //Create the label
+		UILabel *eventLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, tableView.frame.size.width-20, 20)];
+		//Tag the label
+		eventLabel.tag = EVENT_LABEL_TAG;
+		//Add the label to the cell
+		[cell.contentView addSubview:eventLabel];
+		[eventLabel release];
+        
+        //Create the label
+		UILabel *durationLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 70, tableView.frame.size.width-20, 20)];
+		//Tag the label
+		durationLabel.tag = DURATION_LABEL_TAG;
+		//Add the label to the cell
+		[cell.contentView addSubview:durationLabel];
+		[durationLabel release];
+	}
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-    // Configure the cell...
-    //---add this---
-    cell.textLabel.text = [[self.logOfCommutes objectAtIndex:indexPath.row] objectAtIndex:0];
+	// Get the label for the current cell
+	UILabel *dateLabel = (UILabel *)[cell viewWithTag:DATE_LABEL_TAG];
+	// Set the label text
+	dateLabel.text = [[logOfCommutes objectAtIndex:indexPath.row] objectAtIndex:0];
+    // Get the label for the current cell
+	UILabel *sessionLabel = (UILabel *)[cell viewWithTag:SESSION_LABEL_TAG];
+	// Set the label text
+	sessionLabel.text = [[logOfCommutes objectAtIndex:indexPath.row] objectAtIndex:1];
+    // Get the label for the current cell
+	UILabel *eventLabel = (UILabel *)[cell viewWithTag:EVENT_LABEL_TAG];
+	// Set the label text
+	eventLabel.text = [[logOfCommutes objectAtIndex:indexPath.row] objectAtIndex:2];
+    // Get the label for the current cell
+	UILabel *durationLabel = (UILabel *)[cell viewWithTag:DURATION_LABEL_TAG];
+	// Set the label text
+	durationLabel.text = [[logOfCommutes objectAtIndex:indexPath.row] objectAtIndex:3];
     
     return cell;
 }
