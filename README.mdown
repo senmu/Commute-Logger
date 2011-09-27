@@ -2,6 +2,7 @@ Transit Commute Tracker
 =======================
 
 [![](http://samlu.ca/cpsc583/screenshots/commute_tracker_scrnshot_halfres.jpg)](http://samlu.ca/cpsc583/screenshots/commute_tracker_scrnshot.png)
+[![](http://samlu.ca/cpsc583/screenshots/commute_tracker_scrnshot2_halfres.jpg)](http://samlu.ca/cpsc583/screenshots/commute_tracker_scrnshot2.png)
 
 This iPhone app is a really basic app I created for my InfoVis course, made available as an Xcode Project (iOS SDK 4.3). For one of my chosen visualization projects, I chose to record the time spent for each part of my commute to and from school by transit. It started to become inconvenient using a combination of the stopwatch app on my iPhone and a notebook to record the times. Thus I created this little app in a few hours which should pay off later on when it gets cold.
 
