@@ -1,0 +1,15 @@
+Transit Commute Tracker
+=======================
+
+[![](http://samlu.ca/cpsc583/screenshots/commute_tracker_scrnshot_halfres.jpg)](http://samlu.ca/cpsc583/screenshots/commute_tracker_scrnshot.png)
+
+This iPhone app is a really basic app I created for my InfoVis course, made available as an Xcode Project (iOS SDK 4.3). For one of my chosen visualization projects, I chose to record the time spent for each part of my commute to and from school by transit. It started to become inconvenient using a combination of the stopwatch app on my iPhone and a notebook to record the times. Thus I created this little app in a few hours which should pay off later on when it gets cold.
+
+You can retrieve the data by plugging your iPhone to your computer and download a csv through iTunes' file sharing.
+
+Issues with the current app
+---------------------------
+- All the events (names) that get recorded are hardcoded in the app. I made it hardcoded to expedite the completion of something I could use the next day. It would be nice if you could configure what transfers and buses or trains you take during your trip.
+- While multitasking is supported (which is important), if a timer is started and you pop the view controller to go back to the first tab, everything gets lost. If you choose to use this app in its current state, **leave it alone while the timer is running**.
+- The second tab which is intended to display the data you've recorded is not yet implemented
+- 
