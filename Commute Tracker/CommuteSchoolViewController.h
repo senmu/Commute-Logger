@@ -10,7 +10,19 @@
 
 
 @interface CommuteSchoolViewController : UIViewController {
-    
+    UIButton *startCommuteBtn;
+    UIButton *transferAtMarlboroughBtn;
+    UIButton *cityCentreBtn;
+    UIButton *transferAt3rdStBtn;
+    UIButton *crowfootBtn;
+    UIButton *endCommuteBtn;
 }
+
+@property(nonatomic,retain) IBOutlet UIButton *startCommuteBtn;
+@property(nonatomic,retain) IBOutlet UIButton *transferAtMarlboroughBtn;
+@property(nonatomic,retain) IBOutlet UIButton *cityCentreBtn;
+@property(nonatomic,retain) IBOutlet UIButton *transferAt3rdStBtn;
+@property(nonatomic,retain) IBOutlet UIButton *crowfootBtn;
+@property(nonatomic,retain) IBOutlet UIButton *endCommuteBtn;
 
 @end

@@ -11,6 +11,8 @@
 
 @implementation CommuteHomeViewController
 
+@synthesize startCommuteBtn, transferAt8thStBtn, mcknightBtn, transferAtMarlboroughBtn, abbeydaleBtn, endCommuteBtn;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

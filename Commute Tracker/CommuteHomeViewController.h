@@ -10,7 +10,19 @@
 
 
 @interface CommuteHomeViewController : UIViewController {
-    
+    UIButton *startCommuteBtn;
+    UIButton *transferAt8thStBtn;
+    UIButton *mcknightBtn;
+    UIButton *transferAtMarlboroughBtn;
+    UIButton *abbeydaleBtn;
+    UIButton *endCommuteBtn;
 }
+
+@property(nonatomic,retain) IBOutlet UIButton *startCommuteBtn;
+@property(nonatomic,retain) IBOutlet UIButton *transferAt8thStBtn;
+@property(nonatomic,retain) IBOutlet UIButton *mcknightBtn;
+@property(nonatomic,retain) IBOutlet UIButton *transferAtMarlboroughBtn;
+@property(nonatomic,retain) IBOutlet UIButton *abbeydaleBtn;
+@property(nonatomic,retain) IBOutlet UIButton *endCommuteBtn;
 
 @end
