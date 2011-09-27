@@ -71,4 +71,89 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+#pragma mark - Animations
+- (void)disableButton:(UIButton*)myButton
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+	[UIView beginAnimations:nil context:context];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseOut]; //delete "EaseOut", then push ESC to check out other animation styles
+	[UIView setAnimationDuration: 0.5];//how long the animation will take
+	[UIView setAnimationDelegate: self];
+	myButton.alpha = 0.5; //1.0 to make it visible or 0.0 to make it invisible
+	[UIView commitAnimations];
+}
+
+- (void)enableButton:(UIButton*)myButton
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+	[UIView beginAnimations:nil context:context];
+	[UIView setAnimationCurve:UIViewAnimationCurveEaseOut]; //delete "EaseOut", then push ESC to check out other animation styles
+	[UIView setAnimationDuration: 0.5];//how long the animation will take
+	[UIView setAnimationDelegate: self];
+	myButton.alpha = 1.0; //1.0 to make it visible or 0.0 to make it invisible
+	[UIView commitAnimations];
+}
+
+#pragma mark - Button actions
+
+- (IBAction)startCommute:(id)sender
+{
+    NSLog(@"startCommute button pressed");
+    startCommuteBtn.enabled = NO;
+    [self disableButton:startCommuteBtn];
+    
+    transferAtMarlboroughBtn.enabled = YES;
+    [self enableButton:transferAtMarlboroughBtn];
+}
+
+- (IBAction)transferAtMarlborough:(id)sender
+{
+    NSLog(@"transferAtMarlborough button pressed");
+    transferAtMarlboroughBtn.enabled = NO;
+    [self disableButton:transferAtMarlboroughBtn];
+    
+    cityCentreBtn.enabled = YES;
+    [self enableButton:cityCentreBtn];
+}
+
+- (IBAction)cityCentreTrain:(id)sender
+{
+    NSLog(@"cityCentre button pressed");
+    cityCentreBtn.enabled = NO;
+    [self disableButton:cityCentreBtn];
+    
+    transferAt3rdStBtn.enabled = YES;
+    [self enableButton:transferAt3rdStBtn];
+}
+
+- (IBAction)transferAt3rdSt:(id)sender
+{
+    NSLog(@"transferAt3rdSt button pressed");
+    transferAt3rdStBtn.enabled = NO;
+    [self disableButton:transferAt3rdStBtn];
+    
+    crowfootBtn.enabled = YES;
+    [self enableButton:crowfootBtn];
+}
+
+- (IBAction)crowfootTrain:(id)sender
+{
+    NSLog(@"crowfoot button pressed");
+    crowfootBtn.enabled = NO;
+    [self disableButton:crowfootBtn];
+    
+    endCommuteBtn.enabled = YES;
+    [self enableButton:endCommuteBtn];
+}
+
+- (IBAction)endCommute:(id)sender
+{
+    NSLog(@"endCommute button pressed");
+    endCommuteBtn.enabled = NO;
+    [self disableButton:endCommuteBtn];
+    
+    startCommuteBtn.enabled = YES;
+    [self enableButton:startCommuteBtn];
+}
+
 @end

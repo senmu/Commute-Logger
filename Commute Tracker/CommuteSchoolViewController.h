@@ -29,4 +29,11 @@
 
 @property(nonatomic,retain) NSDate *lastRecordedTime;
 
+- (IBAction)startCommute:(id)sender;
+- (IBAction)transferAtMarlborough:(id)sender;
+- (IBAction)cityCentreTrain:(id)sender;
+- (IBAction)transferAt3rdSt:(id)sender;
+- (IBAction)crowfootTrain:(id)sender;
+- (IBAction)endCommute:(id)sender;
+
 @end
