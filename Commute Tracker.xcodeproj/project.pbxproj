@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E628270814318260004ECE6B /* CommuteHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E628270614318260004ECE6B /* CommuteHomeViewController.m */; };
+		E628270914318260004ECE6B /* CommuteHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E628270714318260004ECE6B /* CommuteHomeViewController.xib */; };
 		E63B2B5D1430E84700CEBAC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B2B5C1430E84700CEBAC7 /* UIKit.framework */; };
 		E63B2B5F1430E84700CEBAC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B2B5E1430E84700CEBAC7 /* Foundation.framework */; };
 		E63B2B611430E84700CEBAC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B2B601430E84700CEBAC7 /* CoreGraphics.framework */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E628270514318260004ECE6B /* CommuteHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommuteHomeViewController.h; sourceTree = "<group>"; };
+		E628270614318260004ECE6B /* CommuteHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommuteHomeViewController.m; sourceTree = "<group>"; };
+		E628270714318260004ECE6B /* CommuteHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommuteHomeViewController.xib; sourceTree = "<group>"; };
 		E63B2B581430E84700CEBAC7 /* Commute Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commute Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63B2B5C1430E84700CEBAC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E63B2B5E1430E84700CEBAC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +100,9 @@
 				E63B2B771430E84800CEBAC7 /* FirstView.xib */,
 				E63B2B7A1430E84800CEBAC7 /* SecondView.xib */,
 				E63B2B631430E84700CEBAC7 /* Supporting Files */,
+				E628270514318260004ECE6B /* CommuteHomeViewController.h */,
+				E628270614318260004ECE6B /* CommuteHomeViewController.m */,
+				E628270714318260004ECE6B /* CommuteHomeViewController.xib */,
 			);
 			path = "Commute Tracker";
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 				E63B2B701430E84700CEBAC7 /* MainWindow.xib in Resources */,
 				E63B2B791430E84800CEBAC7 /* FirstView.xib in Resources */,
 				E63B2B7C1430E84800CEBAC7 /* SecondView.xib in Resources */,
+				E628270914318260004ECE6B /* CommuteHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +191,7 @@
 				E63B2B6D1430E84700CEBAC7 /* Commute_TrackerAppDelegate.m in Sources */,
 				E63B2B731430E84700CEBAC7 /* FirstViewController.m in Sources */,
 				E63B2B761430E84800CEBAC7 /* SecondViewController.m in Sources */,
+				E628270814318260004ECE6B /* CommuteHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

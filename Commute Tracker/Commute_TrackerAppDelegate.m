@@ -15,9 +15,15 @@
 
 @synthesize tabBarController=_tabBarController;
 
+@synthesize navController=_navController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Customize the navigation bar
+    self.navController.navigationBar.barStyle = UIBarStyleBlack;
+    
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

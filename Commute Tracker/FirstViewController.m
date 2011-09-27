@@ -7,7 +7,8 @@
 //
 
 #import "FirstViewController.h"
-
+#import "Commute_TrackerAppDelegate.h"
+#import "CommuteHomeViewController.h"
 
 @implementation FirstViewController
 
@@ -54,6 +55,10 @@
 // start a commute session of commute home
 - (IBAction)letsGoHome:(id)sender
 {
+    Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
+    CommuteHomeViewController *commuteHomeView = [[CommuteHomeViewController alloc] initWithNibName:@"CommuteHomeViewController" bundle:nil];
+    [appDelegate.navController pushViewController:commuteHomeView animated:YES];
+    [commuteHomeView release];
     NSLog(@"home button pressed!");
 }
 
