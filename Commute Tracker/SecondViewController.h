@@ -9,8 +9,18 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SecondViewController : UIViewController {
-    
+@interface SecondViewController : UITableViewController {
+    UITableView *myTableView;
+    NSMutableArray *logOfCommutes;
 }
 
+@property(nonatomic,retain) IBOutlet UITableView *myTableView;
+@property(nonatomic,retain) NSMutableArray *logOfCommutes;
+
+- (void)loadData;
+
+@end
+
+@interface NSString (ParsingExtensions)
+-(NSArray *)csvRows;
 @end
