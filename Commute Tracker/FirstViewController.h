@@ -10,7 +10,14 @@
 
 
 @interface FirstViewController : UIViewController {
-
+    UIButton *goingHomeBtn;
+    UIButton *goingSchoolBtn;
 }
+
+@property(nonatomic,retain) IBOutlet UIButton *goingHomeBtn;
+@property(nonatomic,retain) IBOutlet UIButton *goingSchoolBtn;
+
+- (IBAction)letsGoHome:(id)sender;
+- (IBAction)letsGoToSchool:(id)sender;
 
 @end

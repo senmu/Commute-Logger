@@ -11,6 +11,8 @@
 
 @implementation FirstViewController
 
+@synthesize goingHomeBtn, goingSchoolBtn;
+
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -47,6 +49,18 @@
 - (void)dealloc
 {
     [super dealloc];
+}
+
+// start a commute session of commute home
+- (IBAction)letsGoHome:(id)sender
+{
+    NSLog(@"home button pressed!");
+}
+
+// start a commute session to go home
+- (IBAction)letsGoToSchool:(id)sender
+{
+    NSLog(@"school button pressed!");
 }
 
 @end

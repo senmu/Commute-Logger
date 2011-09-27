@@ -84,6 +84,7 @@
 		E63B2B621430E84700CEBAC7 /* Commute Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				E67ED0F2143173BC00DF67F3 /* Third Party */,
 				E63B2B6B1430E84700CEBAC7 /* Commute_TrackerAppDelegate.h */,
 				E63B2B6C1430E84700CEBAC7 /* Commute_TrackerAppDelegate.m */,
 				E63B2B6E1430E84700CEBAC7 /* MainWindow.xib */,
@@ -107,6 +108,13 @@
 				E63B2B691430E84700CEBAC7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E67ED0F2143173BC00DF67F3 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Third Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +302,7 @@
 				E63B2B811430E84800CEBAC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
