@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "Commute_TrackerAppDelegate.h"
 #import "CommuteHomeViewController.h"
+#import "CommuteSchoolViewController.h"
 
 @implementation FirstViewController
 
@@ -65,6 +66,10 @@
 // start a commute session to go home
 - (IBAction)letsGoToSchool:(id)sender
 {
+    Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
+    CommuteSchoolViewController *commuteSchoolView = [[CommuteSchoolViewController alloc] initWithNibName:@"CommuteSchoolViewController" bundle:nil];
+    [appDelegate.navController pushViewController:commuteSchoolView animated:YES];
+    [commuteSchoolView release];
     NSLog(@"school button pressed!");
 }
 
