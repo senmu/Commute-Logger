@@ -151,7 +151,7 @@
     // Record data for previous event
     NSString *duration = [self getTimeSince:lastRecordedTime];
     Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute Home" event:@"University to 8th St LRT (via 201-Somerset)" duration:duration];
+    [appDelegate recordEventWithDate:lastRecordedTime forSession:@"Commute Home" event:@"University to 8th St LRT (via 201-Somerset)" duration:duration];
     
     // Reset the timer
     [timer invalidate];
@@ -179,7 +179,7 @@
     // Record data for previous event
     NSString *duration = [self getTimeSince:lastRecordedTime];
     Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute Home" event:@"Transfer @ 8th St LRT" duration:duration];
+    [appDelegate recordEventWithDate:lastRecordedTime forSession:@"Commute Home" event:@"Transfer @ 8th St LRT" duration:duration];
     
     // Reset the timer
     [timer invalidate];
@@ -207,7 +207,7 @@
     // Record data for previous event
     NSString *duration = [self getTimeSince:lastRecordedTime];
     Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute Home" event:@"8th St LRT to Marlborough LRT (via 202-McKnight)" duration:duration];
+    [appDelegate recordEventWithDate:lastRecordedTime forSession:@"Commute Home" event:@"8th St LRT to Marlborough LRT (via 202-McKnight)" duration:duration];
     
     // Reset the timer
     [timer invalidate];
@@ -235,7 +235,7 @@
     // Record data for previous event
     NSString *duration = [self getTimeSince:lastRecordedTime];
     Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute Home" event:@"Transfer @ Marlborough LRT" duration:duration];
+    [appDelegate recordEventWithDate:lastRecordedTime forSession:@"Commute Home" event:@"Transfer @ Marlborough LRT" duration:duration];
     
     // Reset the timer
     [timer invalidate];
@@ -263,7 +263,7 @@
     // Record data for previous event
     NSString *duration = [self getTimeSince:lastRecordedTime];
     Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
-    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute Home" event:@"Marlborough LRT to Home (via 45-Abbeydale)" duration:duration];
+    [appDelegate recordEventWithDate:lastRecordedTime forSession:@"Commute Home" event:@"Marlborough LRT to Home (via 45-Abbeydale)" duration:duration];
     
     // Reset the timer
     [timer invalidate];
