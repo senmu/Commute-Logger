@@ -12,12 +12,14 @@
 @implementation CommuteHomeViewController
 
 @synthesize startCommuteBtn, transferAt8thStBtn, mcknightBtn, transferAtMarlboroughBtn, abbeydaleBtn, endCommuteBtn;
+@synthesize lastRecordedTime;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.lastRecordedTime = nil;
     }
     return self;
 }
@@ -41,6 +43,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // disable all buttons except "start commute"
+    transferAt8thStBtn.enabled = NO;
+    mcknightBtn.enabled = NO;
+    transferAtMarlboroughBtn.enabled = NO;
+    abbeydaleBtn.enabled = NO;
+    endCommuteBtn.enabled = NO;
+    
+    transferAt8thStBtn.alpha = 0.5;
+    mcknightBtn.alpha = 0.5;
+    transferAtMarlboroughBtn.alpha = 0.5;
+    abbeydaleBtn.alpha = 0.5;
+    endCommuteBtn.alpha = 0.5;
 }
 
 - (void)viewDidUnload

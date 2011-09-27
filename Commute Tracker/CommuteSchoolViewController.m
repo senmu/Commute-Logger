@@ -12,12 +12,14 @@
 @implementation CommuteSchoolViewController
 
 @synthesize startCommuteBtn, transferAtMarlboroughBtn, cityCentreBtn, transferAt3rdStBtn, crowfootBtn, endCommuteBtn;
+@synthesize lastRecordedTime;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.lastRecordedTime = nil;
     }
     return self;
 }
@@ -41,6 +43,19 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    // disable all buttons except "start commute"
+    transferAtMarlboroughBtn.enabled = NO;
+    cityCentreBtn.enabled = NO;
+    transferAt3rdStBtn.enabled = NO;
+    crowfootBtn.enabled = NO;
+    endCommuteBtn.enabled = NO;
+    
+    transferAtMarlboroughBtn.alpha = 0.5;
+    cityCentreBtn.alpha = 0.5;
+    transferAt3rdStBtn.alpha = 0.5;
+    crowfootBtn.alpha = 0.5;
+    endCommuteBtn.alpha = 0.5;
 }
 
 - (void)viewDidUnload
