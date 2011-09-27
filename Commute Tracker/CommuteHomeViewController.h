@@ -16,7 +16,9 @@
     UIButton *transferAtMarlboroughBtn;
     UIButton *abbeydaleBtn;
     UIButton *endCommuteBtn;
+    UILabel *topLabel;
     
+    NSTimer *timer;
     NSDate *lastRecordedTime;
 }
 
@@ -26,7 +28,9 @@
 @property(nonatomic,retain) IBOutlet UIButton *transferAtMarlboroughBtn;
 @property(nonatomic,retain) IBOutlet UIButton *abbeydaleBtn;
 @property(nonatomic,retain) IBOutlet UIButton *endCommuteBtn;
+@property(nonatomic,retain) IBOutlet UILabel *topLabel;
 
+@property(nonatomic,retain) NSTimer *timer;
 @property(nonatomic,retain) NSDate *lastRecordedTime;
 
 - (IBAction)startCommute:(id)sender;

@@ -7,12 +7,14 @@
 //
 
 #import "CommuteSchoolViewController.h"
+#import "Commute_TrackerAppDelegate.h"
 
 
 @implementation CommuteSchoolViewController
 
 @synthesize startCommuteBtn, transferAtMarlboroughBtn, cityCentreBtn, transferAt3rdStBtn, crowfootBtn, endCommuteBtn;
-@synthesize lastRecordedTime;
+@synthesize topLabel;
+@synthesize timer, lastRecordedTime;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -20,12 +22,15 @@
     if (self) {
         // Custom initialization
         self.lastRecordedTime = nil;
+        self.timer = nil;
     }
     return self;
 }
 
 - (void)dealloc
 {
+    [timer release];
+    [lastRecordedTime release];
     [super dealloc];
 }
 
@@ -94,6 +99,33 @@
 	[UIView commitAnimations];
 }
 
+#pragma mark - Timer
+- (void)updateTimer
+{
+    NSDate *currentDate = [NSDate date];
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:lastRecordedTime];
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
+    NSString *timeString=[dateFormatter stringFromDate:timerDate];
+    topLabel.text = timeString;
+    [dateFormatter release];
+}
+
+- (NSString*)getTimeSince:(NSDate*)thisDate
+{
+    NSDate *currentDate = [NSDate date];
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:thisDate];
+    NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
+    [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
+    NSString *timeString=[dateFormatter stringFromDate:timerDate];
+    
+    return timeString;
+}
+
 #pragma mark - Button actions
 
 - (IBAction)startCommute:(id)sender
@@ -102,13 +134,40 @@
     startCommuteBtn.enabled = NO;
     [self disableButton:startCommuteBtn];
     
+    lastRecordedTime = [[NSDate date]retain];
+    
     transferAtMarlboroughBtn.enabled = YES;
     [self enableButton:transferAtMarlboroughBtn];
+    
+    // Replace the topLabel with a timer
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
+                                                      target:self
+                                                    selector:@selector(updateTimer)
+                                                    userInfo:nil
+                                                     repeats:YES];
 }
 
 - (IBAction)transferAtMarlborough:(id)sender
 {
     NSLog(@"transferAtMarlborough button pressed");
+    
+    // Record data for previous event
+    NSString *duration = [self getTimeSince:lastRecordedTime];
+    Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute to School" event:@"Home to Marlborough LRT (via 45-Applewood)" duration:duration];
+    
+    // Reset the timer
+    [timer invalidate];
+    timer = nil;
+    // Reset lastRecordedTime
+    lastRecordedTime = [[NSDate date]retain];
+    [self updateTimer];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
+                                             target:self
+                                           selector:@selector(updateTimer)
+                                           userInfo:nil
+                                            repeats:YES];
+    
     transferAtMarlboroughBtn.enabled = NO;
     [self disableButton:transferAtMarlboroughBtn];
     
@@ -119,6 +178,24 @@
 - (IBAction)cityCentreTrain:(id)sender
 {
     NSLog(@"cityCentre button pressed");
+    
+    // Record data for previous event
+    NSString *duration = [self getTimeSince:lastRecordedTime];
+    Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute to School" event:@"Transfer @ Marlborough LRT" duration:duration];
+    
+    // Reset the timer
+    [timer invalidate];
+    timer = nil;
+    // Reset lastRecordedTime
+    lastRecordedTime = [[NSDate date]retain];
+    [self updateTimer];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
+                                             target:self
+                                           selector:@selector(updateTimer)
+                                           userInfo:nil
+                                            repeats:YES];
+    
     cityCentreBtn.enabled = NO;
     [self disableButton:cityCentreBtn];
     
@@ -129,6 +206,24 @@
 - (IBAction)transferAt3rdSt:(id)sender
 {
     NSLog(@"transferAt3rdSt button pressed");
+    
+    // Record data for previous event
+    NSString *duration = [self getTimeSince:lastRecordedTime];
+    Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute to School" event:@"Marlborough LRT to 3rd St LRT (via 202-City Centre)" duration:duration];
+    
+    // Reset the timer
+    [timer invalidate];
+    timer = nil;
+    // Reset lastRecordedTime
+    lastRecordedTime = [[NSDate date]retain];
+    [self updateTimer];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
+                                             target:self
+                                           selector:@selector(updateTimer)
+                                           userInfo:nil
+                                            repeats:YES];
+    
     transferAt3rdStBtn.enabled = NO;
     [self disableButton:transferAt3rdStBtn];
     
@@ -139,6 +234,24 @@
 - (IBAction)crowfootTrain:(id)sender
 {
     NSLog(@"crowfoot button pressed");
+    
+    // Record data for previous event
+    NSString *duration = [self getTimeSince:lastRecordedTime];
+    Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute to School" event:@"Transfer @ 3rd St LRT" duration:duration];
+    
+    // Reset the timer
+    [timer invalidate];
+    timer = nil;
+    // Reset lastRecordedTime
+    lastRecordedTime = [[NSDate date]retain];
+    [self updateTimer];
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0/10.0
+                                             target:self
+                                           selector:@selector(updateTimer)
+                                           userInfo:nil
+                                            repeats:YES];
+    
     crowfootBtn.enabled = NO;
     [self disableButton:crowfootBtn];
     
@@ -149,6 +262,20 @@
 - (IBAction)endCommute:(id)sender
 {
     NSLog(@"endCommute button pressed");
+    
+    // Record data for previous event
+    NSString *duration = [self getTimeSince:lastRecordedTime];
+    Commute_TrackerAppDelegate *appDelegate = (Commute_TrackerAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate recordEventWithDate:[NSDate date] forSession:@"Commute to School" event:@"3rd St LRT to University (via 201-Crowfoot)" duration:duration];
+    
+    // Reset the timer
+    [timer invalidate];
+    timer = nil;
+    // nil lastRecordedTime
+    lastRecordedTime = nil;
+    // Reset topLabel
+    topLabel.text = @"Press a button to log the time for that part of your commute";
+    
     endCommuteBtn.enabled = NO;
     [self disableButton:endCommuteBtn];
     

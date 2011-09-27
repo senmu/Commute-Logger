@@ -11,6 +11,7 @@
 		E628270914318260004ECE6B /* CommuteHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E628270714318260004ECE6B /* CommuteHomeViewController.xib */; };
 		E628270D143184A2004ECE6B /* CommuteSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E628270B143184A2004ECE6B /* CommuteSchoolViewController.m */; };
 		E628270E143184A2004ECE6B /* CommuteSchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E628270C143184A2004ECE6B /* CommuteSchoolViewController.xib */; };
+		E628271B1431A4DD004ECE6B /* NSData+MCFileAppend.m in Sources */ = {isa = PBXBuildFile; fileRef = E628271A1431A4DD004ECE6B /* NSData+MCFileAppend.m */; };
 		E63B2B5D1430E84700CEBAC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B2B5C1430E84700CEBAC7 /* UIKit.framework */; };
 		E63B2B5F1430E84700CEBAC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B2B5E1430E84700CEBAC7 /* Foundation.framework */; };
 		E63B2B611430E84700CEBAC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63B2B601430E84700CEBAC7 /* CoreGraphics.framework */; };
@@ -31,6 +32,8 @@
 		E628270A143184A2004ECE6B /* CommuteSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommuteSchoolViewController.h; sourceTree = "<group>"; };
 		E628270B143184A2004ECE6B /* CommuteSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommuteSchoolViewController.m; sourceTree = "<group>"; };
 		E628270C143184A2004ECE6B /* CommuteSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommuteSchoolViewController.xib; sourceTree = "<group>"; };
+		E62827191431A4DD004ECE6B /* NSData+MCFileAppend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MCFileAppend.h"; sourceTree = "<group>"; };
+		E628271A1431A4DD004ECE6B /* NSData+MCFileAppend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MCFileAppend.m"; sourceTree = "<group>"; };
 		E63B2B581430E84700CEBAC7 /* Commute Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commute Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63B2B5C1430E84700CEBAC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E63B2B5E1430E84700CEBAC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E62827181431A4CD004ECE6B /* MCFileAppend */ = {
+			isa = PBXGroup;
+			children = (
+				E62827191431A4DD004ECE6B /* NSData+MCFileAppend.h */,
+				E628271A1431A4DD004ECE6B /* NSData+MCFileAppend.m */,
+			);
+			name = MCFileAppend;
+			sourceTree = "<group>";
+		};
 		E63B2B4D1430E84700CEBAC7 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 		E67ED0F2143173BC00DF67F3 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
+				E62827181431A4CD004ECE6B /* MCFileAppend */,
 			);
 			name = "Third Party";
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 				E63B2B761430E84800CEBAC7 /* SecondViewController.m in Sources */,
 				E628270814318260004ECE6B /* CommuteHomeViewController.m in Sources */,
 				E628270D143184A2004ECE6B /* CommuteSchoolViewController.m in Sources */,
+				E628271B1431A4DD004ECE6B /* NSData+MCFileAppend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

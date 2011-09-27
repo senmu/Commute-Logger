@@ -7,6 +7,7 @@
 //
 
 #import "Commute_TrackerAppDelegate.h"
+#import "NSData+MCFileAppend.h"
 
 @implementation Commute_TrackerAppDelegate
 
@@ -89,5 +90,36 @@
 {
 }
 */
+
+- (void)recordEventWithDate:(NSDate*)timestamp forSession:(NSString*)theSession event:(NSString*)theEvent duration:(NSString*)theDuration
+{
+    // prepare timestamp
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss.SSS"];
+    NSString *timestampAsString = [dateFormatter stringFromDate:timestamp];
+    
+    // prepare data
+    NSString *userDataEntry = [NSString stringWithFormat:@"\n\"%@\",\"%@\",\"%@\",\"%@\"", timestampAsString, theSession, theEvent, theDuration];
+    
+    // save to doc
+    NSArray *myPathList = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+	NSString *myPath = [myPathList objectAtIndex:0];
+	NSError **err;
+    
+	myPath = [myPath stringByAppendingPathComponent:@"commuteLog.csv"];
+    
+	if(![[NSFileManager defaultManager] fileExistsAtPath:myPath]) 
+	{
+		[[NSFileManager defaultManager] createFileAtPath:myPath contents:nil attributes:nil];
+        NSString *csvHeaders = @"Date (yy/mm/dd HH:mm:ss.SSS),Session,Event,Duration";
+        NSString *headersAndData = [NSString stringWithFormat:@"%@%@", csvHeaders, userDataEntry];
+		[headersAndData writeToFile:myPath atomically:NO encoding:NSUTF8StringEncoding error:err];
+	}
+	else
+	{
+        [userDataEntry appendToFile:myPath usingEncoding:NSUTF8StringEncoding];
+    }
+}
 
 @end

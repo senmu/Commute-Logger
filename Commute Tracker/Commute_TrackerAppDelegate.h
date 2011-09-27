@@ -18,4 +18,6 @@
 
 @property (nonatomic, retain) IBOutlet UINavigationController *navController;
 
+- (void)recordEventWithDate:(NSDate*)timestamp forSession:(NSString*)theSession event:(NSString*)theEvent duration:(NSString*)theDuration;
+
 @end

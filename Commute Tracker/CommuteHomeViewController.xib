@@ -43,25 +43,25 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIButton" id="470591105">
+					<object class="IBUIButton" id="835496811">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{38, 77}, {244, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="267914479"/>
+						<reference key="NSNextKeyView" ref="301141020"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<object class="NSFont" key="IBUIFont" id="455162363">
+						<object class="NSFont" key="IBUIFont" id="289660869">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">15</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Start commute (201-Somerset)</string>
-						<object class="NSColor" key="IBUIHighlightedTitleColor" id="600794251">
+						<object class="NSColor" key="IBUIHighlightedTitleColor" id="770541782">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
@@ -69,18 +69,18 @@
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleShadowColor" id="568159004">
+						<object class="NSColor" key="IBUINormalTitleShadowColor" id="1026680992">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
 					</object>
-					<object class="IBUILabel" id="728595250">
+					<object class="IBUILabel" id="5423260">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{21, 20}, {279, 39}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="470591105"/>
+						<reference key="NSNextKeyView" ref="835496811"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -102,91 +102,91 @@
 						<int key="IBUINumberOfLines">2</int>
 						<int key="IBUITextAlignment">1</int>
 					</object>
-					<object class="IBUIButton" id="267914479">
+					<object class="IBUIButton" id="301141020">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{38, 122}, {244, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="503084970"/>
+						<reference key="NSNextKeyView" ref="758584365"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="455162363"/>
+						<reference key="IBUIFont" ref="289660869"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Transfer @ 8th St LRT Station</string>
-						<reference key="IBUIHighlightedTitleColor" ref="600794251"/>
+						<reference key="IBUIHighlightedTitleColor" ref="770541782"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="568159004"/>
+						<reference key="IBUINormalTitleShadowColor" ref="1026680992"/>
 					</object>
-					<object class="IBUIButton" id="503084970">
+					<object class="IBUIButton" id="758584365">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{38, 167}, {244, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="241625541"/>
+						<reference key="NSNextKeyView" ref="9420242"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="455162363"/>
+						<reference key="IBUIFont" ref="289660869"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">202, 8th St -&gt; Marlborough LRT</string>
-						<reference key="IBUIHighlightedTitleColor" ref="600794251"/>
+						<reference key="IBUIHighlightedTitleColor" ref="770541782"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="568159004"/>
+						<reference key="IBUINormalTitleShadowColor" ref="1026680992"/>
 					</object>
-					<object class="IBUIButton" id="241625541">
+					<object class="IBUIButton" id="9420242">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{38, 212}, {244, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="950822927"/>
+						<reference key="NSNextKeyView" ref="693054009"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="455162363"/>
+						<reference key="IBUIFont" ref="289660869"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Transfer @ Marlborough LRT</string>
-						<reference key="IBUIHighlightedTitleColor" ref="600794251"/>
+						<reference key="IBUIHighlightedTitleColor" ref="770541782"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="568159004"/>
+						<reference key="IBUINormalTitleShadowColor" ref="1026680992"/>
 					</object>
-					<object class="IBUIButton" id="950822927">
+					<object class="IBUIButton" id="693054009">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{38, 257}, {244, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="505270362"/>
+						<reference key="NSNextKeyView" ref="442483998"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="455162363"/>
+						<reference key="IBUIFont" ref="289660869"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">45, Marlborough LRT -&gt; Home</string>
-						<reference key="IBUIHighlightedTitleColor" ref="600794251"/>
+						<reference key="IBUIHighlightedTitleColor" ref="770541782"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="568159004"/>
+						<reference key="IBUINormalTitleShadowColor" ref="1026680992"/>
 					</object>
-					<object class="IBUIButton" id="505270362">
+					<object class="IBUIButton" id="442483998">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{38, 302}, {244, 37}}</string>
@@ -197,21 +197,21 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="455162363"/>
+						<reference key="IBUIFont" ref="289660869"/>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">End commute</string>
-						<reference key="IBUIHighlightedTitleColor" ref="600794251"/>
+						<reference key="IBUIHighlightedTitleColor" ref="770541782"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
-						<reference key="IBUINormalTitleShadowColor" ref="568159004"/>
+						<reference key="IBUINormalTitleShadowColor" ref="1026680992"/>
 					</object>
 				</object>
 				<string key="NSFrame">{{0, 64}, {320, 367}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="728595250"/>
+				<reference key="NSNextKeyView" ref="5423260"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -243,7 +243,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">startCommuteBtn</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="470591105"/>
+						<reference key="destination" ref="835496811"/>
 					</object>
 					<int key="connectionID">11</int>
 				</object>
@@ -251,7 +251,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">transferAt8thStBtn</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="267914479"/>
+						<reference key="destination" ref="301141020"/>
 					</object>
 					<int key="connectionID">12</int>
 				</object>
@@ -259,7 +259,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">mcknightBtn</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="503084970"/>
+						<reference key="destination" ref="758584365"/>
 					</object>
 					<int key="connectionID">13</int>
 				</object>
@@ -267,7 +267,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">transferAtMarlboroughBtn</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="241625541"/>
+						<reference key="destination" ref="9420242"/>
 					</object>
 					<int key="connectionID">14</int>
 				</object>
@@ -275,7 +275,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">abbeydaleBtn</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="950822927"/>
+						<reference key="destination" ref="693054009"/>
 					</object>
 					<int key="connectionID">15</int>
 				</object>
@@ -283,14 +283,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">endCommuteBtn</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="505270362"/>
+						<reference key="destination" ref="442483998"/>
 					</object>
 					<int key="connectionID">16</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">startCommute:</string>
-						<reference key="source" ref="470591105"/>
+						<reference key="source" ref="835496811"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -299,7 +299,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">transferAt8thSt:</string>
-						<reference key="source" ref="267914479"/>
+						<reference key="source" ref="301141020"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -308,7 +308,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">mcknightTrain:</string>
-						<reference key="source" ref="503084970"/>
+						<reference key="source" ref="758584365"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -317,7 +317,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">transferAtMarlborough:</string>
-						<reference key="source" ref="241625541"/>
+						<reference key="source" ref="9420242"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -326,7 +326,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">abbeydaleBus:</string>
-						<reference key="source" ref="950822927"/>
+						<reference key="source" ref="693054009"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -335,11 +335,19 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">endCommute:</string>
-						<reference key="source" ref="505270362"/>
+						<reference key="source" ref="442483998"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">22</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">topLabel</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="5423260"/>
+					</object>
+					<int key="connectionID">23</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -356,13 +364,13 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="728595250"/>
-							<reference ref="470591105"/>
-							<reference ref="267914479"/>
-							<reference ref="503084970"/>
-							<reference ref="241625541"/>
-							<reference ref="950822927"/>
-							<reference ref="505270362"/>
+							<reference ref="5423260"/>
+							<reference ref="835496811"/>
+							<reference ref="301141020"/>
+							<reference ref="758584365"/>
+							<reference ref="9420242"/>
+							<reference ref="693054009"/>
+							<reference ref="442483998"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -379,37 +387,37 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="470591105"/>
+						<reference key="object" ref="835496811"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
-						<reference key="object" ref="728595250"/>
+						<reference key="object" ref="5423260"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">6</int>
-						<reference key="object" ref="267914479"/>
+						<reference key="object" ref="301141020"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">7</int>
-						<reference key="object" ref="503084970"/>
+						<reference key="object" ref="758584365"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">8</int>
-						<reference key="object" ref="241625541"/>
+						<reference key="object" ref="9420242"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">9</int>
-						<reference key="object" ref="950822927"/>
+						<reference key="object" ref="693054009"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="505270362"/>
+						<reference key="object" ref="442483998"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -457,7 +465,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">22</int>
+			<int key="maxID">23</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -533,6 +541,7 @@
 							<string>endCommuteBtn</string>
 							<string>mcknightBtn</string>
 							<string>startCommuteBtn</string>
+							<string>topLabel</string>
 							<string>transferAt8thStBtn</string>
 							<string>transferAtMarlboroughBtn</string>
 						</object>
@@ -542,6 +551,7 @@
 							<string>UIButton</string>
 							<string>UIButton</string>
 							<string>UIButton</string>
+							<string>UILabel</string>
 							<string>UIButton</string>
 							<string>UIButton</string>
 						</object>
@@ -554,6 +564,7 @@
 							<string>endCommuteBtn</string>
 							<string>mcknightBtn</string>
 							<string>startCommuteBtn</string>
+							<string>topLabel</string>
 							<string>transferAt8thStBtn</string>
 							<string>transferAtMarlboroughBtn</string>
 						</object>
@@ -574,6 +585,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">startCommuteBtn</string>
 								<string key="candidateClassName">UIButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">topLabel</string>
+								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">transferAt8thStBtn</string>
