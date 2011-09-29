@@ -17,3 +17,4 @@ Issues with the current app
 Credits
 -------
 - [Jeff Lamarche](http://iphonedevelopment.blogspot.com/2010/08/funny-thing-about-old-code.html) for the MCFileAppend Objective-C category on NSData for easy appending to external files
+- [Drew McCormack](http://www.macresearch.org/cocoa-scientists-part-xxvi-parsing-csv-data) for the Parsing Extensions on NSString, making it easier to work with data from CSVs
