@@ -23,6 +23,8 @@
 		E63B2B761430E84800CEBAC7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63B2B751430E84800CEBAC7 /* SecondViewController.m */; };
 		E63B2B791430E84800CEBAC7 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63B2B771430E84800CEBAC7 /* FirstView.xib */; };
 		E63B2B7C1430E84800CEBAC7 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63B2B7A1430E84800CEBAC7 /* SecondView.xib */; };
+		E673B0B31436355F004FD673 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E673B0B21436355F004FD673 /* icon.png */; };
+		E673B0B51436356B004FD673 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E673B0B41436356B004FD673 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		E63B2B751430E84800CEBAC7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E63B2B781430E84800CEBAC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
 		E63B2B7B1430E84800CEBAC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		E673B0B21436355F004FD673 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		E673B0B41436356B004FD673 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 		E63B2B621430E84700CEBAC7 /* Commute Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				E673B0AC1436351F004FD673 /* Images */,
 				E67ED0F2143173BC00DF67F3 /* Third Party */,
 				E63B2B6B1430E84700CEBAC7 /* Commute_TrackerAppDelegate.h */,
 				E63B2B6C1430E84700CEBAC7 /* Commute_TrackerAppDelegate.m */,
@@ -136,6 +141,15 @@
 				E63B2B691430E84700CEBAC7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E673B0AC1436351F004FD673 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E673B0B41436356B004FD673 /* icon@2x.png */,
+				E673B0B21436355F004FD673 /* icon.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		E67ED0F2143173BC00DF67F3 /* Third Party */ = {
@@ -199,6 +213,8 @@
 				E63B2B7C1430E84800CEBAC7 /* SecondView.xib in Resources */,
 				E628270914318260004ECE6B /* CommuteHomeViewController.xib in Resources */,
 				E628270E143184A2004ECE6B /* CommuteSchoolViewController.xib in Resources */,
+				E673B0B31436355F004FD673 /* icon.png in Resources */,
+				E673B0B51436356B004FD673 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
