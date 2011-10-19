@@ -23,6 +23,8 @@
 		E63B2B761430E84800CEBAC7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63B2B751430E84800CEBAC7 /* SecondViewController.m */; };
 		E63B2B791430E84800CEBAC7 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63B2B771430E84800CEBAC7 /* FirstView.xib */; };
 		E63B2B7C1430E84800CEBAC7 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63B2B7A1430E84800CEBAC7 /* SecondView.xib */; };
+		E648FB57144EC508001A7AA4 /* 11-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = E648FB56144EC508001A7AA4 /* 11-clock.png */; };
+		E648FB5A144EC51C001A7AA4 /* 16-line-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = E648FB59144EC51C001A7AA4 /* 16-line-chart.png */; };
 		E673B0B31436355F004FD673 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E673B0B21436355F004FD673 /* icon.png */; };
 		E673B0B51436356B004FD673 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E673B0B41436356B004FD673 /* icon@2x.png */; };
 /* End PBXBuildFile section */
@@ -36,13 +38,13 @@
 		E628270C143184A2004ECE6B /* CommuteSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommuteSchoolViewController.xib; sourceTree = "<group>"; };
 		E62827191431A4DD004ECE6B /* NSData+MCFileAppend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MCFileAppend.h"; sourceTree = "<group>"; };
 		E628271A1431A4DD004ECE6B /* NSData+MCFileAppend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MCFileAppend.m"; sourceTree = "<group>"; };
-		E63B2B581430E84700CEBAC7 /* Commute Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commute Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63B2B581430E84700CEBAC7 /* Commute Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Commute Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63B2B5C1430E84700CEBAC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E63B2B5E1430E84700CEBAC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E63B2B601430E84700CEBAC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E63B2B641430E84700CEBAC7 /* Commute Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Commute Tracker-Info.plist"; sourceTree = "<group>"; };
+		E63B2B641430E84700CEBAC7 /* Commute Logger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Commute Logger-Info.plist"; sourceTree = "<group>"; };
 		E63B2B661430E84700CEBAC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E63B2B681430E84700CEBAC7 /* Commute Tracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Commute Tracker-Prefix.pch"; sourceTree = "<group>"; };
+		E63B2B681430E84700CEBAC7 /* Commute Logger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Commute Logger-Prefix.pch"; sourceTree = "<group>"; };
 		E63B2B691430E84700CEBAC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E63B2B6B1430E84700CEBAC7 /* Commute_TrackerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Commute_TrackerAppDelegate.h; sourceTree = "<group>"; };
 		E63B2B6C1430E84700CEBAC7 /* Commute_TrackerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Commute_TrackerAppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		E63B2B751430E84800CEBAC7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		E63B2B781430E84800CEBAC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
 		E63B2B7B1430E84800CEBAC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		E648FB56144EC508001A7AA4 /* 11-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "11-clock.png"; sourceTree = "<group>"; };
+		E648FB59144EC51C001A7AA4 /* 16-line-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "16-line-chart.png"; sourceTree = "<group>"; };
 		E673B0B21436355F004FD673 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		E673B0B41436356B004FD673 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "../icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +87,7 @@
 		E63B2B4D1430E84700CEBAC7 = {
 			isa = PBXGroup;
 			children = (
-				E63B2B621430E84700CEBAC7 /* Commute Tracker */,
+				E63B2B621430E84700CEBAC7 /* Commute Logger */,
 				E63B2B5B1430E84700CEBAC7 /* Frameworks */,
 				E63B2B591430E84700CEBAC7 /* Products */,
 			);
@@ -92,7 +96,7 @@
 		E63B2B591430E84700CEBAC7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E63B2B581430E84700CEBAC7 /* Commute Tracker.app */,
+				E63B2B581430E84700CEBAC7 /* Commute Logger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +111,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E63B2B621430E84700CEBAC7 /* Commute Tracker */ = {
+		E63B2B621430E84700CEBAC7 /* Commute Logger */ = {
 			isa = PBXGroup;
 			children = (
 				E673B0AC1436351F004FD673 /* Images */,
@@ -129,15 +133,16 @@
 				E628270B143184A2004ECE6B /* CommuteSchoolViewController.m */,
 				E628270C143184A2004ECE6B /* CommuteSchoolViewController.xib */,
 			);
+			name = "Commute Logger";
 			path = "Commute Tracker";
 			sourceTree = "<group>";
 		};
 		E63B2B631430E84700CEBAC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E63B2B641430E84700CEBAC7 /* Commute Tracker-Info.plist */,
+				E63B2B641430E84700CEBAC7 /* Commute Logger-Info.plist */,
 				E63B2B651430E84700CEBAC7 /* InfoPlist.strings */,
-				E63B2B681430E84700CEBAC7 /* Commute Tracker-Prefix.pch */,
+				E63B2B681430E84700CEBAC7 /* Commute Logger-Prefix.pch */,
 				E63B2B691430E84700CEBAC7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -146,6 +151,8 @@
 		E673B0AC1436351F004FD673 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E648FB59144EC51C001A7AA4 /* 16-line-chart.png */,
+				E648FB56144EC508001A7AA4 /* 11-clock.png */,
 				E673B0B41436356B004FD673 /* icon@2x.png */,
 				E673B0B21436355F004FD673 /* icon.png */,
 			);
@@ -163,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E63B2B571430E84700CEBAC7 /* Commute Tracker */ = {
+		E63B2B571430E84700CEBAC7 /* Commute Logger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E63B2B7F1430E84800CEBAC7 /* Build configuration list for PBXNativeTarget "Commute Tracker" */;
+			buildConfigurationList = E63B2B7F1430E84800CEBAC7 /* Build configuration list for PBXNativeTarget "Commute Logger" */;
 			buildPhases = (
 				E63B2B541430E84700CEBAC7 /* Sources */,
 				E63B2B551430E84700CEBAC7 /* Frameworks */,
@@ -175,9 +182,9 @@
 			);
 			dependencies = (
 			);
-			name = "Commute Tracker";
+			name = "Commute Logger";
 			productName = "Commute Tracker";
-			productReference = E63B2B581430E84700CEBAC7 /* Commute Tracker.app */;
+			productReference = E63B2B581430E84700CEBAC7 /* Commute Logger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +192,7 @@
 /* Begin PBXProject section */
 		E63B2B4F1430E84700CEBAC7 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = E63B2B521430E84700CEBAC7 /* Build configuration list for PBXProject "Commute Tracker" */;
+			buildConfigurationList = E63B2B521430E84700CEBAC7 /* Build configuration list for PBXProject "Commute Logger" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -197,7 +204,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E63B2B571430E84700CEBAC7 /* Commute Tracker */,
+				E63B2B571430E84700CEBAC7 /* Commute Logger */,
 			);
 		};
 /* End PBXProject section */
@@ -215,6 +222,8 @@
 				E628270E143184A2004ECE6B /* CommuteSchoolViewController.xib in Resources */,
 				E673B0B31436355F004FD673 /* icon.png in Resources */,
 				E673B0B51436356B004FD673 /* icon@2x.png in Resources */,
+				E648FB57144EC508001A7AA4 /* 11-clock.png in Resources */,
+				E648FB5A144EC51C001A7AA4 /* 16-line-chart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +321,9 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Commute Tracker/Commute Tracker-Prefix.pch";
-				INFOPLIST_FILE = "Commute Tracker/Commute Tracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Commute Tracker/Commute Logger-Prefix.pch";
+				INFOPLIST_FILE = "Commute Tracker/Commute Logger-Info.plist";
+				PRODUCT_NAME = "Commute Logger";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -325,9 +334,9 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Commute Tracker/Commute Tracker-Prefix.pch";
-				INFOPLIST_FILE = "Commute Tracker/Commute Tracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Commute Tracker/Commute Logger-Prefix.pch";
+				INFOPLIST_FILE = "Commute Tracker/Commute Logger-Info.plist";
+				PRODUCT_NAME = "Commute Logger";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -336,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E63B2B521430E84700CEBAC7 /* Build configuration list for PBXProject "Commute Tracker" */ = {
+		E63B2B521430E84700CEBAC7 /* Build configuration list for PBXProject "Commute Logger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E63B2B7D1430E84800CEBAC7 /* Debug */,
@@ -345,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E63B2B7F1430E84800CEBAC7 /* Build configuration list for PBXNativeTarget "Commute Tracker" */ = {
+		E63B2B7F1430E84800CEBAC7 /* Build configuration list for PBXNativeTarget "Commute Logger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E63B2B801430E84800CEBAC7 /* Debug */,

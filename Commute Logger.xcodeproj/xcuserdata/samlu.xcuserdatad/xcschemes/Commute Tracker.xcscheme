@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E63B2B571430E84700CEBAC7"
-               BuildableName = "Commute Tracker.app"
-               BlueprintName = "Commute Tracker"
-               ReferencedContainer = "container:Commute Tracker.xcodeproj">
+               BuildableName = "Commute Logger.app"
+               BlueprintName = "Commute Logger"
+               ReferencedContainer = "container:Commute Logger.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -41,9 +41,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E63B2B571430E84700CEBAC7"
-            BuildableName = "Commute Tracker.app"
-            BlueprintName = "Commute Tracker"
-            ReferencedContainer = "container:Commute Tracker.xcodeproj">
+            BuildableName = "Commute Logger.app"
+            BlueprintName = "Commute Logger"
+            ReferencedContainer = "container:Commute Logger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -60,9 +60,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E63B2B571430E84700CEBAC7"
-            BuildableName = "Commute Tracker.app"
-            BlueprintName = "Commute Tracker"
-            ReferencedContainer = "container:Commute Tracker.xcodeproj">
+            BuildableName = "Commute Logger.app"
+            BlueprintName = "Commute Logger"
+            ReferencedContainer = "container:Commute Logger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

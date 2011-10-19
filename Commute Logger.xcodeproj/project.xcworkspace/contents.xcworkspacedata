@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Commute Tracker.xcodeproj">
+      location = "self:Commute Logger.xcodeproj">
    </FileRef>
 </Workspace>
